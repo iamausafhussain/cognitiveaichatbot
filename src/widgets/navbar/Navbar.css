@@ -4,9 +4,10 @@
     height: 87px;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 2px solid lightgray;
+    border-bottom: 2px solid rgb(96, 85, 85);
     position: static;
     top: 0;
+    background-color: white;
 }
 
 .nav-link-container {

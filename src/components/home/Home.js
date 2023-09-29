@@ -1,10 +1,11 @@
 import React from "react";
-import Navbar from "../../widgets/navbar/Navbar";
+import "./Home.css";
+import Chatform from "../../widgets/chatform/Chatform";
 
 function Home() {
   return (
-    <div>
-      <Navbar />
+    <div className="Home">
+      <Chatform />
     </div>
   );
 }

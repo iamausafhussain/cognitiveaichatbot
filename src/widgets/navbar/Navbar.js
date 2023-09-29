@@ -2,6 +2,8 @@ import React from "react";
 import "./Navbar.css";
 import Logo from "../../assets/logo.png";
 import Off from "../../assets/Off.png";
+import Button from "@mui/material/Button";
+import LogoutIcon from "@mui/icons-material/Logout";
 
 function Navbar() {
   return (
@@ -25,26 +27,16 @@ function Navbar() {
       </div>
       <div className="nav-right">
         <div className="nav-useroptions">
-          <button className="nav-button">
-            <div className="button-icon">
-              <img src={Off} />
-            </div>
-          </button>
-          <button className="nav-button">
+          <Button variant="outlined" endIcon={<LogoutIcon />} color="inherit">
+            Logout
+          </Button>
+
+          {/* Custom Button */}
+          {/* <button className="nav-button">
             <div className="button-icon">
               <img src="../../assets/icons/message.svg" />
             </div>
-          </button>
-          <button className="nav-button">
-            <div className="button-icon">
-              <img src="../../assets/icons/settings.svg" />
-            </div>
-          </button>
-          <button className="nav-button">
-            <div className="button-icon">
-              <img src="../../assets/icons/user.svg" />
-            </div>
-          </button>
+          </button> */}
         </div>
       </div>
     </div>
